@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Audimance - DEMO Performance</title>
+
+   <link rel="stylesheet" href="/css/pure.css">
+   <link rel="stylesheet" href="/css/master.css">
+   <link rel="stylesheet" href="/css/selection-list.css">
+   <link rel="stylesheet" href="/css/checkbox.css">
+</head>
+<body>
+
+   <header>
+      <!--div id="debug"></div -->
+      <input type="hidden" id="roomName" value="{{.Room.Name}}">
+
+      <h1>Mix your tracks</h1>
+   </header>
+   <main>
+      <button id="play" style="display: none;"></button>
+
+      <ul id="tracks" class="selection-list">
+         {{ range .Room.Sources }}
+         <li>
+            <label class="selectme" name="bumps" for="input-{{.ID}}">{{.Name}}</label>
+            <input type="checkbox" class="selector" name="{{.ID}}" id="input-{{.ID}}" />
+            <audio id="audio-{{.ID}}"/>
+         </li>
+         {{ end }}
+      </ul>
+   </main>
+
+	<script type="module" src="/js/tracks.js"></script>
+
+</body>
+</html>

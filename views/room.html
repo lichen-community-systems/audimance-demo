@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" initial-scale="1.0">
+	<meta http-equiv="x-ua-compatible">
+
+	<title>Audimance - DEMO</title>
+
+    <link rel="stylesheet" href="/css/room.css">
+
+	<script type="module" src="/js/room.js"></script>
+</head>
+<body>
+	<main>
+		<input type="hidden" id="roomName" value="{{.Room.Name}}">
+
+		<div id="audimance-room"></div>
+
+		{{ range $src := .Room.Sources }}
+			<audio id="audio-{{ $src.ID }}-0" data-srcid="{{ $src.ID }}">
+				{{ with index $src.Tracks 0 }}
+				<source src="{{ index .AudioFiles 0 }}"></source>
+				<source src="{{ index .AudioFiles 1 }}"></source>
+				<source src="{{ index .AudioFiles 2 }}"></source>
+				{{ end }}
+			</audio>
+			<audio id="audio-{{ $src.ID }}-1" data-srcid="{{ $src.ID }}">
+				{{ with index $src.Tracks 1 }}
+				<source src="{{ index .AudioFiles 0 }}"></source>
+				<source src="{{ index .AudioFiles 1 }}"></source>
+				<source src="{{ index .AudioFiles 2 }}"></source>
+				{{ end }}
+			</audio>
+		{{ end }}
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+*.wav
+*.mp3
+*.ogg
+*.m4a
+*.cert
+*.key
+*.csr
+*.pem
+/media/
