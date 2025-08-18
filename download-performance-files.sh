@@ -191,10 +191,10 @@ PERFORMANCE_CUES=(
     "3-0-a-d"
 )
 
-# mkdir -p media/performance
-# pushd media/performance
-# download_files "https://s3.cycore.io/kineticlight/wired/performance" "${PERFORMANCE_CUES[@]}"
-# popd
+mkdir -p media/performance
+pushd media/performance
+download_files "https://s3.cycore.io/kineticlight/wired/performance" "${PERFORMANCE_CUES[@]}"
+popd
 
 # Download the static media files
 PROGRAM_AUDIO=(
