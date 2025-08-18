@@ -22,14 +22,12 @@
 				{{ with index $src.Tracks 0 }}
 				<source src="{{ index .AudioFiles 0 }}"></source>
 				<source src="{{ index .AudioFiles 1 }}"></source>
-				<source src="{{ index .AudioFiles 2 }}"></source>
 				{{ end }}
 			</audio>
 			<audio id="audio-{{ $src.ID }}-1" data-srcid="{{ $src.ID }}">
 				{{ with index $src.Tracks 1 }}
 				<source src="{{ index .AudioFiles 0 }}"></source>
 				<source src="{{ index .AudioFiles 1 }}"></source>
-				<source src="{{ index .AudioFiles 2 }}"></source>
 				{{ end }}
 			</audio>
 		{{ end }}

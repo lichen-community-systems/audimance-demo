@@ -1,460 +1,212 @@
 #!/bin/bash
-mkdir -p media/performance
 
-pushd media/performance
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-0-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-1-b-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-2-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-b-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-3-c-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-4-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-5-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-6-b-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-7-b-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-8-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-a-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-b-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/1-9-c-g.webm
+EXTENSIONS=("mp3" "webm")
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-a-g.webm
+download_files() {
+    local base_url=$1
+    shift
+    local prefixes=("$@")
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-b-g.webm
+    for prefix in "${prefixes[@]}"; do
+        for ext in "${EXTENSIONS[@]}"; do
+            filename="${prefix}.${ext}"
+            url="${base_url}/${filename}"
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-c-g.webm
+            if ! curl -f -s -S -O "$url"; then
+                echo "Download failed: $filename"
+                rm -f "$filename"
+            fi
+        done
+    done
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-1-d-g.webm
+    echo "All files downloaded."
+}
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-a-g.webm
+PERFORMANCE_CUES=(
+    "1-0-a-a"
+    "1-0-a-b"
+    "1-0-a-d"
+    "1-0-a-e"
+    "1-0-a-g"
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-b-g.webm
+    "1-1-a-a"
+    "1-1-a-b"
+    "1-1-a-d"
+    "1-1-a-e"
+    "1-1-a-g"
+    "1-1-b-a"
+    "1-1-b-b"
+    "1-1-b-d"
+    "1-1-b-e"
+    "1-1-b-g"
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-c-g.webm
+    "1-2-a-a"
+    "1-2-a-b"
+    "1-2-a-d"
+    "1-2-a-e"
+    "1-2-a-g"
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-2-d-g.webm
+    "1-3-a-a"
+    "1-3-a-b"
+    "1-3-a-d"
+    "1-3-a-e"
+    "1-3-a-g"
+    "1-3-b-a"
+    "1-3-b-b"
+    "1-3-b-d"
+    "1-3-b-e"
+    "1-3-b-g"
+    "1-3-c-a"
+    "1-3-c-b"
+    "1-3-c-d"
+    "1-3-c-e"
+    "1-3-c-g"
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-a-g.webm
+    "1-4-a-a"
+    "1-4-a-b"
+    "1-4-a-d"
+    "1-4-a-e"
+    "1-4-a-g"
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-3-b-g.webm
+    "1-5-a-a"
+    "1-5-a-b"
+    "1-5-a-d"
+    "1-5-a-e"
+    "1-5-a-g"
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-4-a-g.webm
+    "1-6-a-a"
+    "1-6-a-b"
+    "1-6-a-d"
+    "1-6-a-e"
+    "1-6-a-g"
+    "1-6-b-a"
+    "1-6-b-b"
+    "1-6-b-d"
+    "1-6-b-e"
+    "1-6-b-g"
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-a-g.webm
+    "1-7-a-a"
+    "1-7-a-b"
+    "1-7-a-d"
+    "1-7-a-e"
+    "1-7-a-g"
+    "1-7-b-a"
+    "1-7-b-b"
+    "1-7-b-d"
+    "1-7-b-e"
+    "1-7-b-g"
 
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-a.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-a.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-b.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-b.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-c.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-c.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-d.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-e.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-e.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-f.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-f.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-g.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/2-5-b-g.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/3-0-a-d.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/performance/3-0-a-d.webm
-popd
+    "1-8-a-a"
+    "1-8-a-b"
+    "1-8-a-d"
+    "1-8-a-e"
+    "1-8-a-g"
+
+    "1-9-a-a"
+    "1-9-a-b"
+    "1-9-a-d"
+    "1-9-a-e"
+    "1-9-a-g"
+    "1-9-b-a"
+    "1-9-b-b"
+    "1-9-b-d"
+    "1-9-b-e"
+    "1-9-b-g"
+    "1-9-c-a"
+    "1-9-c-b"
+    "1-9-c-d"
+    "1-9-c-e"
+    "1-9-c-g"
+
+    "2-1-a-a"
+    "2-1-a-b"
+    "2-1-a-d"
+    "2-1-a-e"
+    "2-1-a-g"
+    "2-1-b-a"
+    "2-1-b-b"
+    "2-1-b-d"
+    "2-1-b-e"
+    "2-1-b-g"
+    "2-1-c-a"
+    "2-1-c-b"
+    "2-1-c-d"
+    "2-1-c-e"
+    "2-1-c-g"
+    "2-1-d-a"
+    "2-1-d-b"
+    "2-1-d-d"
+    "2-1-d-e"
+    "2-1-d-g"
+
+    "2-2-a-a"
+    "2-2-a-b"
+    "2-2-a-d"
+    "2-2-a-e"
+    "2-2-a-g"
+    "2-2-b-a"
+    "2-2-b-b"
+    "2-2-b-d"
+    "2-2-b-e"
+    "2-2-b-g"
+    "2-2-c-a"
+    "2-2-c-b"
+    "2-2-c-d"
+    "2-2-c-e"
+    "2-2-c-g"
+    "2-2-d-a"
+    "2-2-d-b"
+    "2-2-d-d"
+    "2-2-d-e"
+    "2-2-d-g"
+
+    "2-3-a-a"
+    "2-3-a-b"
+    "2-3-a-d"
+    "2-3-a-e"
+    "2-3-a-g"
+    "2-3-b-a"
+    "2-3-b-b"
+    "2-3-b-d"
+    "2-3-b-e"
+    "2-3-b-g"
+
+    "2-4-a-a"
+    "2-4-a-b"
+    "2-4-a-d"
+    "2-4-a-e"
+    "2-4-a-g"
+
+    "2-5-a-a"
+    "2-5-a-b"
+    "2-5-a-d"
+    "2-5-a-e"
+    "2-5-a-g"
+    "2-5-b-a"
+    "2-5-b-b"
+    "2-5-b-d"
+    "2-5-b-e"
+    "2-5-b-g"
+
+    "3-0-a-d"
+)
+
+# mkdir -p media/performance
+# pushd media/performance
+# download_files "https://s3.cycore.io/kineticlight/wired/performance" "${PERFORMANCE_CUES[@]}"
+# popd
+
+# Download the static media files
+PROGRAM_AUDIO=(
+    "front-cover"
+    "curators-notes"
+    "curators-note-access-summary"
+    "bios"
+    "funders"
+    "back-cover"
+)
 
 mkdir -p media/static
 pushd media/static
-curl -O -s https://s3.cycore.io/kineticlight/wired/front-cover.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/front-cover.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/curators-notes.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/curators-notes.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/notes-for-mdr-all-the-sex.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/notes-for-mdr-all-the-sex.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/notes-for-autumn-knight.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/notes-for-autumn-knight.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/curators-note-access-summary.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/curators-note-access-summary.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/bios.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/bios.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/funders.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/funders.mp3
-curl -O -s https://s3.cycore.io/kineticlight/wired/back-cover.webm
-curl -O -s https://s3.cycore.io/kineticlight/wired/back-cover.mp3
+download_files "https://s3.cycore.io/kineticlight/wired" "${PROGRAM_AUDIO[@]}"
 popd

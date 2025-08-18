@@ -3,7 +3,6 @@ mediaBaseURL: "https://s3.cycore.io/kineticlight/wired/"
 remoteMedia: true
 formats:
   - mp3
-  - m4a
   - webm
 cues:
   - name: "Speech"
@@ -294,7 +293,7 @@ rooms:
             audioFilePrefix: "performance/2-5-b-d"
           - cue: "3-0-a"
             audioFilePrefix: "performance/3-0-a-d"
-      - name: "Light"
+      - name: "Projections and Lighting"
         location:
           x: 30
           y: 0
