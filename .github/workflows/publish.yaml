@@ -35,8 +35,8 @@ jobs:
       uses: docker/build-and-push-action@v6
       with:
         push: true
-        tags:
-          - ghcr.io/cycoresystems/audimance-demo:latest
-          - ghcr.io/cycoresystems/audimance-demo:${{ github.ref_type == 'tag' && github.ref_name || '' }}
+        tags: |
+          ghcr.io/cycoresystems/audimance-demo:latest
+          ghcr.io/cycoresystems/audimance-demo:${{ github.ref_type == 'tag' && github.ref_name || '' }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
