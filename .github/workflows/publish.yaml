@@ -13,6 +13,8 @@ jobs:
   publish:
     name: "Build and Publish container image"
     runs-on: ubuntu-latest
+    env:
+      release: ${{ github.ref_type == 'tag' && github.ref_name || '' }}
     permissions:
       id-token: write
       contents: read
@@ -31,12 +33,18 @@ jobs:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Publish container
-      uses: docker/build-and-push-action@v6
+    - name: Publish container (latest)
+      uses: docker/build-push-action@v6
       with:
         push: true
-        tags:
-          - ghcr.io/cycoresystems/audimance-demo:latest
-          - ghcr.io/cycoresystems/audimance-demo:${{ github.ref_type == 'tag' && github.ref_name || '' }}
+        tags: ghcr.io/cycoresystems/audimance-demo:latest
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish container (tag)
+      uses: docker/build-push-action@v6
+      if: env.release != ''
+      with:
+        push: true
+        tags: ghcr.io/cycoresystems/audimance-demo:${{ env.release }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
