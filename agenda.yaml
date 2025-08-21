@@ -1,6 +1,4 @@
 title: "Demo - Excerpt from WIRED by Kinetic Light"
-mediaBaseURL: "https://s3.cycore.io/kineticlight/wired/"
-remoteMedia: true
 formats:
   - mp3
   - webm
